@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 void _strtok(const char *str, char delimeter)
 {

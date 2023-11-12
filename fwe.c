@@ -33,4 +33,5 @@ int main(void)
 		/*parent*/
 		wait(&status);
 	}
+	return (0);
 }

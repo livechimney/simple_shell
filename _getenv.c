@@ -8,7 +8,7 @@ char *_getenv(const char *name)
 	int i;
 	char *token;
 
-	i =0;
+	i = 0;
 	while (environ[i])
 	{
 		token = strtok(environ[i], "=");
@@ -21,9 +21,10 @@ char *_getenv(const char *name)
 	return (NULL);
 }
 
-void main(void)
+int main(void)
 {
 	char *homevalue = _getenv("HOME");
 
 	printf("%s\n", homevalue);
+	return(0);
 }

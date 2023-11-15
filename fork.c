@@ -4,6 +4,7 @@
 int main(void)
 {
 	pid_t pid;
+	pid = 0;
 
 	printf("Before fork I was one\n");
 
@@ -16,7 +17,7 @@ int main(void)
 
 	}
 	printf("After fork I become two\n");
-	return 0;
+	return (0);
 
 
 }

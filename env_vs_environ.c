@@ -3,8 +3,8 @@
 
 extern char **environ;
 
-int main(int ac, char **av, char **env)
+int main(int ac __attribute__((unused)), char **env)
 {
-	printf("%p\n %p\n", environ, env);
+	printf("%p\n %p\n", (void *)environ, (void *)env);
 	return (0);
 }

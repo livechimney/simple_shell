@@ -1,10 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 void _strtok(const char *str, char delimeter)
 {
 	int len = strlen(str);
-	char word[len + 1];
+	size_t size = len + 1;
+	char *word = malloc(size);
 	int i, j;
 
 	for (i = 0; i <= len; i++)

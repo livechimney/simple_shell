@@ -1,11 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(int ac, char **av)
+int main(int ac __attribute__((unused)), char **av)
 {
-	int i;
+	int i = 0;
+	printf("sorting %d", i);
 
-	printf("argv content is argv[]\n");
+	printf("argv content is argv[i]\n");
 
 	while (*av != NULL)
 	{

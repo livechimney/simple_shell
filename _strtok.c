@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
+
 void _strtok(const char *str, char delimeter)
 {
 	int len = strlen(str);

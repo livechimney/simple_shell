@@ -22,6 +22,7 @@ char *_getenv(const char *name)
 }
 
 int main(void)
+
 {
 	char *homevalue = _getenv("HOME");
 
